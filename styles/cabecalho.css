@@ -1,0 +1,28 @@
+.cabecalho{
+    padding: 2rem 0 1.37rem 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.cabecalho__imagem{
+    width: 3.56rem;
+    border-radius: 50%;
+}
+
+.cabecalho__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cabecalho__saudacao{
+    font-size: 1.37rem;
+    font-weight: 700;
+    color: var(--cor-titulo);
+}
+
+.cabecalho__info{
+    font-size: 0.87rem;
+    font-weight: 400;
+    color: var(--cor-texto);
+}
