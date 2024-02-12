@@ -1,5 +1,6 @@
 @import url(cabecalho.css);
 @import url(consulta.css);
+@import url(rodape.css);
 
 :root{
     --cor-fundo: #F8F4FF;
@@ -13,5 +14,5 @@
 body{
     background-color: var(--cor-fundo);
     font-family: 'Montserrat', sans-serif;
-    padding: 2rem 1rem 1rem;
+    padding: 2rem 1rem 5.37rem;
 }

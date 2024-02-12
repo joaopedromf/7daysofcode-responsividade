@@ -1,0 +1,31 @@
+.rodape{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 0;
+    background-color: var(--cor-fundo-card);
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: 0 -2px 0.62rem rgba(0, 0, 0, 0.2);
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.rodape__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--cor-titulo);
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+.rodape__nome-item-selecionado{
+    color: var(--cor-botao-azul);
+}
