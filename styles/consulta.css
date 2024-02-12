@@ -1,0 +1,127 @@
+.consultas__periodo-container{
+    margin-bottom: 1.5rem;
+}
+
+.consultas__periodo-container:last-child{
+    margin-bottom: 0;
+}
+
+.consulta__periodo{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--cor-titulo);
+    padding: 0.6rem 0;
+}
+
+.consulta__card{
+    background-color: var(--cor-fundo-card);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.consulta__card:last-child{
+    margin-bottom: 0;
+}
+
+.consulta__container-paciente{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(70, 70, 70, 0.1);
+}
+
+.consulta__imagem-paciente{
+    width: 2rem;
+    border-radius: 50%;
+}
+
+.consulta__container-info-paciente{
+    display: flex;
+    gap: 1rem;
+}
+
+.consulta__info-paciente{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.consulta__nome-paciente{
+    font-weight: 700;
+    font-size: 0.87rem;
+    color: var(--cor-titulo);
+}
+
+.consulta__tipo-container{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.consulta__tipo-icone{
+    width: 11%;
+}
+
+.consulta__tipo{
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: var(--cor-texto);
+}
+
+.botao-chat{
+    background: url(../assets/chat.svg) no-repeat;
+    background-position: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: #F6F6F6;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.consulta__container-horario{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.consulta__horario{
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: var(--cor-titulo);
+}
+
+.consulta__container-botoes{
+    display: flex;
+    gap: 1.12rem;
+    justify-content: space-between;
+}
+
+.botao{
+    width: 100%;
+    padding: 0.81rem 0;
+    font-size: 0.87rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.botao--transparente{
+    color: var(--cor-titulo);
+    background-color: transparent;
+    border: 1px solid #ECECEC;
+}
+
+.botao--laranja{
+    color: var(--cor-fundo-card);
+    background-color: var(--cor-botao-laranja);
+    border: none;
+}
+
+.botao--azul{
+    color: var(--cor-fundo-card);
+    background-color: var(--cor-botao-azul);
+    border: none;
+}
