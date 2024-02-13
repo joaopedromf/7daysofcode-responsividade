@@ -1,0 +1,82 @@
+.botao-flutuante__input{
+    display: none;
+}
+
+.botao-flutuante .botao-flutuante__botao{
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--cor-botao-azul);
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.botao-flutuante__botao-mais{
+    background: url(../assets/mais-icone.svg);
+    position: fixed;
+    bottom: 5.62rem;
+    right: 1.06rem;
+}
+
+.botao-flutuante__botao-consulta-video{
+    background: url(../assets/camera-icone-botao.svg);
+    position: fixed;
+    bottom: 10.2rem;
+    right: 1.06rem;
+    display: none;
+}
+
+.botao-flutuante__descricao-consulta{
+    background-color: var(--cor-fundo-card);
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: var(--cor-titulo);
+    padding: 3px 0.5rem;
+    border-radius: 1.43rem;
+    z-index: 2;
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.botao-flutuante__descricao-consulta-video{
+    position: fixed;
+    bottom: 11.42rem;
+    right: 5.3rem;
+}
+
+.botao-flutuante__descricao-consulta-presencial{
+    position: fixed;
+    bottom: 16rem;
+    right: 5.3rem;
+}
+
+.botao-flutuante__botao-consulta-presencial{
+    background: url(../assets/pin-icone-botao.svg);
+    position: fixed;
+    bottom: 14.78rem;
+    right: 1.06rem;
+    display: none;
+}
+
+.botao-flutuante__input:checked ~ .botao-flutuante__rotulo-consulta-video .botao-flutuante__descricao-consulta,
+.botao-flutuante__input:checked ~ .botao-flutuante__rotulo-consulta-presencial .botao-flutuante__descricao-consulta,
+.botao-flutuante__input:checked ~ .botao-flutuante__rotulo-consulta-video .botao-flutuante__botao-consulta-video,
+.botao-flutuante__input:checked ~ .botao-flutuante__rotulo-consulta-presencial .botao-flutuante__botao-consulta-presencial{
+    display: block;
+}
+
+.botao-flutuante__input:checked ~ .botao-flutuante__efeito{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
