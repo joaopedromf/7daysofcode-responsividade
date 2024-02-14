@@ -13,6 +13,9 @@
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+    min-width: 290px;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .rodape__link{
