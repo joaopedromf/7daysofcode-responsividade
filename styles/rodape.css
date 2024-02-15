@@ -29,6 +29,50 @@
     font-size: 0.75rem;
 }
 
+.rodape__nome-item{
+    transition: color .3s linear;
+}
+
+.rodape__item:hover .rodape__nome-item{
+    color: var(--cor-botao-azul);
+}
+
 .rodape__nome-item-selecionado{
     color: var(--cor-botao-azul);
+    font-weight: 700;
+}
+
+@media screen and (min-width: 1100px){
+
+    .rodape{
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: auto;
+        border-radius: 0;
+        padding: 2rem var(--padding-lr-rodape);
+        width: var(--largura-rodape-tela-grande);
+    }
+
+    .rodape__lista{
+        flex-direction: column;
+        gap: 2rem;
+        max-width: none;
+        min-width: fit-content;
+        margin: 0;
+    }
+
+    .rodape__item{
+        width: 100%;
+    }
+
+    .rodape__link{
+        flex-direction: row;
+        gap: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .rodape__icone{
+        width: 1.5rem;
+    }
 }

@@ -10,10 +10,23 @@
     --cor-fundo-card: #FFFFFF;
     --cor-botao-laranja: #FFB050;
     --cor-botao-azul: #4894FF;
+
+    --padding-lr-body: 4%;
+
+    --largura-rodape-tela-grande: 12vw;
+    --padding-lr-rodape: 1.5rem;
+    
 }
 
 body{
     background-color: var(--cor-fundo);
     font-family: 'Montserrat', sans-serif;
-    padding: 2rem 4% 5.37rem;
+    padding: 2rem var(--padding-lr-body) 5.37rem;
+}
+
+@media screen and (min-width: 1100px){
+
+    body{
+        padding-left: calc(var(--largura-rodape-tela-grande) + var(--padding-lr-rodape) * 2 + var(--padding-lr-body));
+    }
 }
