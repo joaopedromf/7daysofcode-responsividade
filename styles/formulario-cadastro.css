@@ -1,0 +1,80 @@
+label{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #898989;
+}
+
+input:not([type="submit"]), 
+select,
+textarea{
+    border-radius: 0.5rem;
+    border: 1px solid #ECECEC;
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+input[type="submit"]{
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+input::placeholder,
+textarea::placeholder{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #CFCFCF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline: 2px solid var(--cor-botao-azul);
+}
+
+textarea{
+    resize: vertical;
+}
+
+.formulario-cadastro{
+    display: none;
+}
+
+.formulario-cadastro__titulo{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--cor-titulo);
+    padding: 0.6rem 0;
+}
+
+.formulario-cadastro__form{
+    background-color: var(--cor-fundo-card);
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    padding: 3rem;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-cadastro__campos{
+    display: flex;
+    gap: 2rem;
+}
+
+.formulario-cadastro__container{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+@media screen and (min-width: 1100px){
+
+    .formulario-cadastro{
+        display: block;
+    }
+}

@@ -2,6 +2,7 @@
 @import url(consulta.css);
 @import url(rodape.css);
 @import url(botao-flutuante.css);
+@import url(formulario-cadastro.css);
 
 :root{
     --cor-fundo: #F8F4FF;

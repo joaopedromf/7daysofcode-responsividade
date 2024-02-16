@@ -273,6 +273,40 @@
                 </ul>
             </section>
         </section>
+        <section class="formulario-cadastro">
+            <h2 class="formulario-cadastro__titulo">Nova consulta</h2>
+            <form action="" class="formulario-cadastro__form">
+                <div class="formulario-cadastro__campos">
+                    <div class="formulario-cadastro__container">
+                        <label for="nome">Nome do paciente</label>
+                        <input type="text" id="nome" required placeholder="Nome completo">
+                    </div>
+                    <div class="formulario-cadastro__container">
+                        <label for="tipo">Tipo de consulta</label>
+                        <select name="tipo" id="tipo" required>
+                            <option selected hidden value="">Selecione</option>
+                            <option value="no-local">No local</option>
+                            <option value="remota">Remota</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formulario-cadastro__campos">
+                    <div class="formulario-cadastro__container">
+                        <label for="data">Data da consulta</label>
+                        <input type="date" name="data" id="data" required>
+                    </div>
+                    <div class="formulario-cadastro__container">
+                        <label for="horario">Horário da consulta</label>
+                        <input type="time" name="horario" id="horario" required>
+                    </div>
+                </div>
+                <div class="formulario-cadastro__container">
+                    <label for="observacoes">Observações</label>
+                    <textarea name="observacoes" id="observacoes" rows="5" placeholder="Mensagem"></textarea>
+                </div>
+                <input type="submit" value="Salvar" class="botao botao--azul">
+            </form>
+        </section>
     </main>
     <footer class="rodape">
         <ul class="rodape__lista">
